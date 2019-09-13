@@ -36,6 +36,44 @@
 
 ### **Code examples:**
 
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./index.js" defer></script>
+    <title>slider</title>
+</head>
+<body>
+
+  <div id="root"></div>
+
+</body>
+</html>
+```
+
+``` javascript
+let images = ['https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0208.gif',
+'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0210.gif',
+'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0209.gif',
+'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0207.gif'];
+let slider = document.getElementById('root');
+let img = document.createElement('img');
+slider.appendChild(img);
+let i = 1;
+img.src = images[0];
+
+setInterval(() => {
+  img.src = images[i];
+  i++;
+  if(i == images.length){
+    i = 0;
+  }
+}, 1000);
+```
+
 ### **Experience:**
 
 * __30.03.2019 – 27.07.2019__ - *trainee, Еducational Center of HTP “IT-Academy”*
