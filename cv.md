@@ -88,7 +88,7 @@ setInterval(() => {
 
   **Project role**: *Front-end developer*
 
-  **Project description**: **
+  **Project description**: *website development with HTML & CSS*
 
   **link to the project**:  *<https://github.com/karway211/HelloWorld/tree/menu/src>*
 
