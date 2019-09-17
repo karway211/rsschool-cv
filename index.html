@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>rsschool-cv</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>rsschool-cv</h1>
+            <nav class="navbar">
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#contact">Contact</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#summary">Summary</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#skills">Skills</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#code">Code</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#experience">Experience</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#education">Education</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#english">English</a>
+                    </div>
+            </nav>
+        </header>
+        <main>
+
+            <div id="contact" class="user">
+                <h2>ANDREY KARCHEUSKI</h2>
+            </div>
+            
+            <section class="contact">
+                <h3 class="section__header">contact</h3>
+                <div class="contact-wrapper">
+                    <ul class="section__list">
+                        <li><strong>Phone:</strong> <a class="contact-wrapper__link" href="+375445477737">+375(44)5477737</a></li>
+                        <li><strong>Email:</strong> <a class="contact-wrapper__link" href="mailto: karway211@gmail.com">karway211@gmail.com</a></li>
+                        <li><strong>Linkedin:</strong> <a class="contact-wrapper__link" href="https://www.linkedin.com/in/андрей-карчевский-865898185">https://www.linkedin.com/in/андрей-карчевский-865898185</a></li>
+                        <li><strong>skype:</strong> <a class="contact-wrapper__link" href="skype:+375445477737?call">live:37250c3478b9f1a1</a></li>
+                    </ul>
+                    <img class="my-photo" src="img/DSC_79623.png" width="158px" height="197px" alt="">
+                </div>
+            </section>
+            <section id="summary" class="summary">
+                <h3 class="section__header">summary</h3>
+                <ul class="section__list">
+                    <li>I make it my goal to create software with the user in mind, creating applications with a useable and intuitive user interface experience.</li>
+                    <li>I also understand the importance of creating highly readable and easily maintainable source code.</li>
+                    <li>I am constantly striving to learn new technologies and look to ways to better myself in this rapidly changing industry.</li>
+                </ul>
+            </section>
+            <section id="skills" class="skills">
+                <h3 class="section__header">skills</h3>
+                <ul class="section__list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SCSS</li>
+                    <li>JavaScript</li>
+                    <li>ES6</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section id="code" class="code-examples">
+                <h3 class="section__header">Code examples</h3>
+                <div class="code">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                            &lt;head&gt;<br>
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                &lt;script src="./index.js" defer&gt;&lt;script&gt;
+                                &lt;title>slider&lt;title&gt;
+                            &lt;head&gt;
+                            &lt;body&gt;
+                        
+                                &lt;div id="root"&gt;&lt;div&gt;
+                        
+                            &lt;body&gt;
+                        &lt;html&gt;
+                </div>
+                <div class="code">
+                        let images = ['https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0208.gif',
+                        'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0210.gif',
+                        'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0209.gif',
+                        'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0207.gif'];
+
+                        let slider = document.getElementById('root');
+                        let img = document.createElement('img');
+                        slider.appendChild(img);
+                        let i = 1;
+                        img.src = images[0];
+                        
+                        setInterval(() => {
+                          img.src = images[i];
+                          i++;
+                          if(i == images.length){
+                            i = 0;
+                          }
+                        }, 1000);
+                </div>
+            </section>
+            <section id="experience" class="experience">
+                <h3 class="section__header">Experience</h3>
+                <ul class="section__list">
+                    <li><strong>30.03.2019 – 27.07.2019</strong> - trainee, Еducational Center of HTP “IT-Academy”<br>
+                        <strong>Project role</strong>: Front-end developer <br>
+                        <strong>Project description</strong>: game tic-tac-toe <br>  
+                        <strong>link to the project</strong>: https://gitlab.com/karway211/javascript/blob/homework_1/index.js</li>
+                    <li><strong>06.02.2019 – 04.05.2019</strong> – trainee, Еducational Center of HTP “IT-Academy”<br>
+                        <strong>Project role</strong>: Front-end developer <br>  
+                        <strong>Project description</strong>: website development with HTML & CSS  <br>   
+                        <strong>link to the project</strong>: https://github.com/karway211/HelloWorld/tree/menu/src</li>
+                </ul>
+            </section>
+            <section id="education" class="education">
+                <h3 class="section__header">Education</h3>
+                <ul class="section__list">
+                    <li><strong>22.05.2019 - 08.08.2019</strong> - Educational Center of HTP “IT-Academy” Course: web application development JAVASCRIPT</li>
+                    <li><strong>06.02.2019 - 04.05.2019</strong> - Educational Center of HTP “IT-Academy” Course: website development with HTML, CSS & JAVASCRIPT</li>
+                    <li><strong>2003 - 2008</strong> - Sukhoi State technical university of Gomel <br>
+                        <strong>Faculty</strong>: Mechanical Engineering Faculty <br>
+                        <strong>Department</strong>: Mechanical engineering technology</li>
+                </ul>
+            </section>
+            <section id="english" class="english">
+                <h3 class="section__header">English</h3>
+                <ul class="section__list">
+                    <li><strong>Elementary</strong> (I attend private English lessons)</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+                <nav class="navbar">
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#contact">Contact</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#summary">Summary</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#skills">Skills</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#code">Code</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#experience">Experience</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#education">Education</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#english">English</a>
+                        </div>
+                </nav>
+            <address class="address">
+                Andrey Karcheuski 2019
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
