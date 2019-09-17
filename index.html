@@ -9,71 +9,61 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <h1>Curriculum vitae</h1>
-            <nav class="nav-section">
-                <div><a href="#contact">Contact Info</a></div>
-                <div><a href="#summary">Summary</a></div>
-                <div><a href="#skills">Skills</a></div>
-                <div><a href="#code">Code examples</a></div>
-                <div><a href="#experience">Experience</a></div>
-                <div><a href="#education">Education</a></div>
-                <div><a href="#english">English</a></div>
+        <header class="header">
+            <h1>rsschool-cv</h1>
+            <nav class="navbar">
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#contact">Contact</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#summary">Summary</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#skills">Skills</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#code">Code</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#experience">Experience</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#education">Education</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__item__link" href="#english">English</a>
+                    </div>
             </nav>
         </header>
         <main>
 
             <div id="contact" class="user">
                 <h2>ANDREY KARCHEUSKI</h2>
-                <img src="" alt="">
             </div>
-
+            
             <section class="contact">
-                <h3>contact</h3>
-                <div class="contact__block">
-                    <div class="contact__block-top">
-                        <span>Phone</span>
-                    </div>
-                    <div class="contact__block-bottom">
-                        <span>+375(44)5477737</span>
-                    </div>
-                </div>
-                <div class="contact__block">
-                    <div class="contact__block-top">
-                        <span>Email</span>
-                    </div>
-                    <div class="contact__block-bottom">
-                        <span>karway211@gmail.com</span>
-                    </div>
-                </div>
-                <div class="contact__block">
-                    <div class="contact__block-top">
-                        <span>Linkedin</span>
-                    </div>
-                    <div class="contact__block-bottom">
-                        <span>https://www.linkedin.com/in/андрей-карчевский-865898185</span>
-                    </div>
-                </div>
-                <div class="contact__block">
-                    <div class="contact__block-top">
-                        <span>skype</span>
-                    </div>
-                    <div class="contact__block-bottom">
-                        <span>live:37250c3478b9f1a1</span>
-                    </div>
+                <h3 class="section__header">contact</h3>
+                <div class="contact-wrapper">
+                    <ul class="section__list">
+                        <li><strong>Phone:</strong> <a class="contact-wrapper__link" href="+375445477737">+375(44)5477737</a></li>
+                        <li><strong>Email:</strong> <a class="contact-wrapper__link" href="mailto: karway211@gmail.com">karway211@gmail.com</a></li>
+                        <li><strong>Linkedin:</strong> <a class="contact-wrapper__link" href="https://www.linkedin.com/in/андрей-карчевский-865898185">https://www.linkedin.com/in/андрей-карчевский-865898185</a></li>
+                        <li><strong>skype:</strong> <a class="contact-wrapper__link" href="skype:+375445477737?call">live:37250c3478b9f1a1</a></li>
+                    </ul>
+                    <img class="my-photo" src="img/DSC_79623.png" width="158px" height="197px" alt="">
                 </div>
             </section>
             <section id="summary" class="summary">
-                <h3>summary</h3>
-                <ul>
+                <h3 class="section__header">summary</h3>
+                <ul class="section__list">
                     <li>I make it my goal to create software with the user in mind, creating applications with a useable and intuitive user interface experience.</li>
                     <li>I also understand the importance of creating highly readable and easily maintainable source code.</li>
                     <li>I am constantly striving to learn new technologies and look to ways to better myself in this rapidly changing industry.</li>
                 </ul>
             </section>
-            <section class="skills">
-                <h3>skills</h3>
-                <ul>
+            <section id="skills" class="skills">
+                <h3 class="section__header">skills</h3>
+                <ul class="section__list">
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>SCSS</li>
@@ -83,8 +73,8 @@
                 </ul>
             </section>
             <section id="code" class="code-examples">
-                <h3>Code examples</h3>
-                <pre>
+                <h3 class="section__header">Code examples</h3>
+                <div class="code">
                         &lt;!DOCTYPE html&gt;
                         &lt;html lang="en"&gt;
                             &lt;head&gt;<br>
@@ -100,12 +90,13 @@
                         
                             &lt;body&gt;
                         &lt;html&gt;
-                </pre>
-                <pre>
+                </div>
+                <div class="code">
                         let images = ['https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0208.gif',
                         'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0210.gif',
                         'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0209.gif',
                         'https://www.gifki.org/data/media/320/smayl-avto-animatsionnaya-kartinka-0207.gif'];
+
                         let slider = document.getElementById('root');
                         let img = document.createElement('img');
                         slider.appendChild(img);
@@ -119,11 +110,11 @@
                             i = 0;
                           }
                         }, 1000);
-                </pre>
+                </div>
             </section>
             <section id="experience" class="experience">
-                <h3>Experience</h3>
-                <ul>
+                <h3 class="section__header">Experience</h3>
+                <ul class="section__list">
                     <li><strong>30.03.2019 – 27.07.2019</strong> - trainee, Еducational Center of HTP “IT-Academy”<br>
                         <strong>Project role</strong>: Front-end developer <br>
                         <strong>Project description</strong>: game tic-tac-toe <br>  
@@ -135,8 +126,8 @@
                 </ul>
             </section>
             <section id="education" class="education">
-                <h3>Education</h3>
-                <ul>
+                <h3 class="section__header">Education</h3>
+                <ul class="section__list">
                     <li><strong>22.05.2019 - 08.08.2019</strong> - Educational Center of HTP “IT-Academy” Course: web application development JAVASCRIPT</li>
                     <li><strong>06.02.2019 - 04.05.2019</strong> - Educational Center of HTP “IT-Academy” Course: website development with HTML, CSS & JAVASCRIPT</li>
                     <li><strong>2003 - 2008</strong> - Sukhoi State technical university of Gomel <br>
@@ -145,24 +136,41 @@
                 </ul>
             </section>
             <section id="english" class="english">
-                <h3>English</h3>
-                <ul>
-                    <li>Elementary (I attend private English lessons)</li>
+                <h3 class="section__header">English</h3>
+                <ul class="section__list">
+                    <li><strong>Elementary</strong> (I attend private English lessons)</li>
                 </ul>
             </section>
 
         </main>
 
-        <footer>
-            <nav class="nav-section">
-                <div><a href="#contact">Contact Info</a></div>
-                <div><a href="#summary">Summary</a></div>
-                <div><a href="#skills">Skills</a></div>
-                <div><a href="#code">Code examples</a></div>
-                <div><a href="#experience">Experience</a></div>
-                <div><a href="#education">Education</a></div>
-                <div><a href="#english">English</a></div>
-            </nav>
+        <footer class="footer">
+                <nav class="navbar">
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#contact">Contact</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#summary">Summary</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#skills">Skills</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#code">Code</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#experience">Experience</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#education">Education</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__item__link" href="#english">English</a>
+                        </div>
+                </nav>
+            <address class="address">
+                Andrey Karcheuski 2019
+            </address>
         </footer>
     </div>
 </body>
