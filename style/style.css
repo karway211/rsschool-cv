@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
 }
-
-body {
+body,
+html {
     box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+}
+body {
+    
     display: flex;
-    justify-content: center;
-    width: 100vw;
-    min-height: 100vh;  
+    /* justify-content: center; */
+      
 }
 
 main {
@@ -18,7 +22,7 @@ main {
 .wrapper {
     max-width: 1024px;
     background-color: rgba(180, 172, 172);
-    
+    margin: 0 auto;   
 }
 
 .header {
@@ -82,9 +86,12 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .section__list {
+    display: flex;
+    flex-direction: column;
     margin: 0 2rem;   
 }
 
